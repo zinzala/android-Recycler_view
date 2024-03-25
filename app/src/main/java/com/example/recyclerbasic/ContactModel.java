@@ -9,4 +9,9 @@ public class ContactModel {
         this.name = name;
         this.number = number;
     }
+
+    public ContactModel(String name, String number){
+        this.name = name;
+        this.number = number;
+    }
 }
