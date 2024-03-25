@@ -21,7 +21,7 @@
         android:src="@drawable/ic_person_add"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="21dp"
+        android:layout_margin="35dp"
         android:elevation="12dp"
         app:rippleColor="@color/black"/>
 

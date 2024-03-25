@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         FAB = findViewById(R.id.idFAB);
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Number is mandatory", Toast.LENGTH_SHORT).show();
                 }
 
-                arrContacts.add(new ContactModel(name,number));
+                arrContacts.add(new ContactModel(R.drawable.girl,name,number));
                 recyclerContactAdapter.notifyItemInserted(arrContacts.size()-1);
                 recyclerView.scrollToPosition(arrContacts.size()-1);
                 dialog.dismiss();
